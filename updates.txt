@@ -1,0 +1,4 @@
+# 2021-08-29
+main_gui.ui 추가
+access,secret 값을 text file로부터 받아오도록 함
+
