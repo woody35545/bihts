@@ -14,21 +14,24 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="te_console">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>50</y>
+      <y>30</y>
       <width>581</width>
-      <height>271</height>
+      <height>241</height>
      </rect>
     </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_getCurrentPrice">
     <property name="geometry">
      <rect>
       <x>630</x>
-      <y>50</y>
+      <y>30</y>
       <width>151</width>
       <height>31</height>
      </rect>
@@ -41,13 +44,42 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>30</y>
+      <y>10</y>
       <width>81</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>[ console ]</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_command">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>280</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>command</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="te_command">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>280</y>
+      <width>491</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
     </property>
    </widget>
   </widget>
@@ -57,7 +89,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
