@@ -9,13 +9,20 @@ class main_window_class(QMainWindow, main_ui_form) :
         self.setupUi(self)
         self.btn_getCurrentPrice.clicked.connect(self.action_btn_getCurrentPrice)
         self.btn_command.clicked.connect(self.action_btn_command)
+        self.le_command.returnPressed.connect(self.action_btn_command)
     def action_btn_getCurrentPrice(self):
         self.te_console.append("1800 won")
     def action_btn_command(self):
-        input_command_ = (self.te_command.toPlainText())
-        self.te_console.append(input_command_)
+        input_command_ = (self.le_command.text())
+        self.te_console.append("command >> "+str(input_command_))
+        self.le_command.clear()
+        i = input_command_
+        if i == "clear" or i == "c":
+            self.te_console.clear()
+        if i == "get_price":
+            self.te_console.append("1800 won")
 
-        self.te_command.clear()
+
 
 def init_windows():
     app = QApplication(sys.argv)

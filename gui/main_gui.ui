@@ -23,6 +23,13 @@
       <height>241</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+background-color: black;
+color: white
+
+}</string>
+    </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
@@ -66,7 +73,7 @@
      <string>command</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="te_command">
+   <widget class="QLineEdit" name="le_command">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -74,12 +81,6 @@
       <width>491</width>
       <height>21</height>
      </rect>
-    </property>
-    <property name="verticalScrollBarPolicy">
-     <enum>Qt::ScrollBarAlwaysOff</enum>
-    </property>
-    <property name="horizontalScrollBarPolicy">
-     <enum>Qt::ScrollBarAlwaysOff</enum>
     </property>
    </widget>
   </widget>
