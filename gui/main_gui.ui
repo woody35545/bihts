@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>389</height>
+    <height>399</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -64,10 +64,16 @@ color: white
     <property name="geometry">
      <rect>
       <x>540</x>
-      <y>280</y>
+      <y>270</y>
       <width>81</width>
-      <height>23</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: black;
+color: white; 
+}</string>
     </property>
     <property name="text">
      <string>command</string>
@@ -77,10 +83,16 @@ color: white
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>280</y>
-      <width>491</width>
-      <height>21</height>
+      <y>270</y>
+      <width>501</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background-color: black;
+color: white
+}</string>
     </property>
    </widget>
   </widget>
